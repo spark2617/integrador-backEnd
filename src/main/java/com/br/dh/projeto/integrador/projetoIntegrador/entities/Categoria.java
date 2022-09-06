@@ -15,7 +15,6 @@ public class Categoria {
 
     //get e set
 
-
     public Integer getId() {
         return id;
     }
