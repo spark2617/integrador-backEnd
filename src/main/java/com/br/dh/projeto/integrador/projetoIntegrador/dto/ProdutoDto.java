@@ -18,7 +18,7 @@ public class ProdutoDto implements Serializable {
 
 
     //construtores
-    
+
     public ProdutoDto(){}
 
     public ProdutoDto(Integer id, String title, String image, String description, double price) {
