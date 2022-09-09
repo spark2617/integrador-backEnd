@@ -13,7 +13,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/produto")
+@RequestMapping(value = "/produtos")  //endpoint: http://localhost:9000/produtos
 public class ProdutoControllers {
 
     @Autowired
@@ -25,19 +25,19 @@ public class ProdutoControllers {
         return ResponseEntity.ok().body(list);
     }
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/{id}")  //endpoint: http://localhost:9000/produtos/{id}
     public ResponseEntity<ProdutoDto> buscarDentistaPorId(@PathVariable Integer id) {
         ProdutoDto dto = service.buscarPorId(id);
         return ResponseEntity.ok().body(dto);
     }
 
-    @DeleteMapping(value = "/{id}")
+    @DeleteMapping(value = "/{id}") //endpoint: http://localhost:9000/produtos/{id}
     public ResponseEntity<Void> excluirDentista(@PathVariable Integer id) {
         service.excluir(id);
         return ResponseEntity.noContent().build(); // Retorna 204
     }
 
-    @PostMapping
+    @PostMapping //endpoint: http://localhost:9000/produtos
     public ResponseEntity<ProdutoDto> inserirDentista(@RequestBody ProdutoDto dto) {
         dto = service.inserir(dto); // O dto que retornou agora tem ID
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
@@ -45,10 +45,19 @@ public class ProdutoControllers {
         return ResponseEntity.created(uri).body(dto);
     }
 
-    @PutMapping(value = "/{id}")
+    @PutMapping(value = "/{id}") //endpoint: http://localhost:9000/produtos/{id}
     public ResponseEntity<ProdutoDto> atualizarDentista(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
         dto = service.atualizar(id, dto);
         return ResponseEntity.ok().body(dto);
     }
+
+    /* Exemplo de body
+     {
+      "title":"item",
+      "image":"https://image.com.br",
+      "description":"Um belo item",
+      "price": 1.99
+     }
+      */
 
 }

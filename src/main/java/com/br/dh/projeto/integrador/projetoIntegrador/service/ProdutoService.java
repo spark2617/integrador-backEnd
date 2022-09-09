@@ -6,8 +6,8 @@ import com.br.dh.projeto.integrador.projetoIntegrador.entities.Produto;
 import com.br.dh.projeto.integrador.projetoIntegrador.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

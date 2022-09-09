@@ -1,16 +1,17 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
 
+
 public class Categoria {
     private Integer id;
-    private String nome;
+    private String name;
 
 
     //construtores
     public Categoria(){}
 
-    public Categoria(Integer id, String nome) {
+    public Categoria(Integer id, String name) {
         this.id = id;
-        this.nome = nome;
+        this.name = name;
     }
 
     //get e set
@@ -23,11 +24,11 @@ public class Categoria {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String name) {
+        this.name = name;
     }
 }

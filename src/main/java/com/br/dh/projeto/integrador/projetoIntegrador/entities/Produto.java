@@ -1,6 +1,19 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
 
-public class Produto {
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
+
+@Entity
+
+public class Produto implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    @Id//chave primária
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//chave estrangeira
 
     private Integer id;
     private String title;
@@ -15,7 +28,7 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(Integer id, String title, String image, double price,String description) {
+    public Produto(Integer id, String title, String image,String description,double price) {
         this.id = id;
         this.title = title;
         this.image = image;
