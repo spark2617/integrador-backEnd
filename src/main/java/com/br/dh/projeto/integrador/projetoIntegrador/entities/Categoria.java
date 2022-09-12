@@ -1,7 +1,7 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
 
 
-<<<<<<< HEAD
+
 import javax.persistence.*;
 
 import java.io.Serializable;

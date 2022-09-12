@@ -1,5 +1,6 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
 import javax.persistence.*;
+import java.io.Serializable;
 
 
 @Entity

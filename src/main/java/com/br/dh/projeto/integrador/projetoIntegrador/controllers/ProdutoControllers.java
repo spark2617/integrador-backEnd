@@ -24,48 +24,45 @@ public class ProdutoControllers {
         return ResponseEntity.ok().body(list);
     }
 
-<<<<<<< HEAD
+
     @GetMapping(value = "/{id}")
     public ResponseEntity<ProdutoDto> buscarProdutoPorId(@PathVariable Integer id) {
-=======
-    @GetMapping(value = "/{id}")  //endpoint: http://localhost:9000/produtos/{id}
-    public ResponseEntity<ProdutoDto> buscarDentistaPorId(@PathVariable Integer id) {
->>>>>>> 1a524546144e3e322110e864ec62e2e460820815
+
+
+
         ProdutoDto dto = service.buscarPorId(id);
         return ResponseEntity.ok().body(dto);
     }
 
-<<<<<<< HEAD
-    @DeleteMapping(value = "/{id}")
+
+    @DeleteMapping(value = "/{id}")//endpoint: http://localhost:9000/produtos/{id}
     public ResponseEntity<Void> excluirProduto(@PathVariable Integer id) {
-=======
-    @DeleteMapping(value = "/{id}") //endpoint: http://localhost:9000/produtos/{id}
-    public ResponseEntity<Void> excluirDentista(@PathVariable Integer id) {
->>>>>>> 1a524546144e3e322110e864ec62e2e460820815
+
+
+
         service.excluir(id);
         return ResponseEntity.noContent().build(); // Retorna 204
     }
 
-<<<<<<< HEAD
-    @PostMapping
-    public ResponseEntity<ProdutoDto> inserirProduto(@RequestBody ProdutoDto dto) {
-=======
+
     @PostMapping //endpoint: http://localhost:9000/produtos
-    public ResponseEntity<ProdutoDto> inserirDentista(@RequestBody ProdutoDto dto) {
->>>>>>> 1a524546144e3e322110e864ec62e2e460820815
+    public ResponseEntity<ProdutoDto> inserirProduto(@RequestBody ProdutoDto dto) {
+
+
+
+
         dto = service.inserir(dto); // O dto que retornou agora tem ID
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);
     }
 
-<<<<<<< HEAD
-    @PutMapping(value = "/{id}")
-    public ResponseEntity<ProdutoDto> atualizarProduto(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
-=======
+
     @PutMapping(value = "/{id}") //endpoint: http://localhost:9000/produtos/{id}
-    public ResponseEntity<ProdutoDto> atualizarDentista(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
->>>>>>> 1a524546144e3e322110e864ec62e2e460820815
+    public ResponseEntity<ProdutoDto> atualizarProduto(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
+
+    
+
         dto = service.atualizar(id, dto);
         return ResponseEntity.ok().body(dto);
     }
