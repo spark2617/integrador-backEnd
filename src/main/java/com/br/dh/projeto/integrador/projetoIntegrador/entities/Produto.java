@@ -1,9 +1,14 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
 import javax.persistence.*;
 
+
 @Entity
 @Table
-public class Produto {
+
+public class Produto implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+
 
 
     @Id
@@ -21,7 +26,7 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(Integer id, String title, String image, double price,String description) {
+    public Produto(Integer id, String title, String image,String description,double price) {
         this.id = id;
         this.title = title;
         this.image = image;

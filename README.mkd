@@ -1,0 +1,29 @@
+<h2>Projeto ecommerce back end</h2>
+
+
+Aplicação de cadastro de produtos de um ecommerce.
+
+
+
+
+
+## 📌O que foi feito aqui?
+
+
+
+- A base do projeto é feita seguindo o padrão DAO para comunicação com o banco de dados.
+- O banco de dados é o h2 usado localmente.
+- A comunicação com a API é feita pela arquitetura REST 
+
+
+
+## Softwares e linguagens usados 💾
+
+<span><a href="https://www.jetbrains.com/pt-br/idea/"><img src="./ImagesReadMe/inteliJ.png"></a><a href="https://spring.io/projects/spring-boot/"><img src="./ImagesReadMe/spring.png" height="75px"></a></span>
+
+
+
+
+
+
+
