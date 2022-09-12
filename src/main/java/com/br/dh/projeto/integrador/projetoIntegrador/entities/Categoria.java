@@ -1,6 +1,16 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
 
-public class Categoria {
+
+import javax.persistence.*;
+
+import java.io.Serializable;
+
+@Entity
+@Table
+public class Categoria implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
 

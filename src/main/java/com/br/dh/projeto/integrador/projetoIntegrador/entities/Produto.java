@@ -1,7 +1,13 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.entities;
+import javax.persistence.*;
 
+@Entity
+@Table
 public class Produto {
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
     private String image;
