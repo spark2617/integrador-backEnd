@@ -5,8 +5,8 @@ import com.br.dh.projeto.integrador.projetoIntegrador.entities.Categoria;
 import com.br.dh.projeto.integrador.projetoIntegrador.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -39,7 +39,7 @@ public class CategoriaService {
     @Transactional
     public CategoriaDto inserir(CategoriaDto dto) {
         Categoria entidade = new Categoria();
-        entidade.setNome(dto.getNome());
+        entidade.setNome(dto.getName());
         entidade = repository.save(entidade);
         return new CategoriaDto(entidade);
     }
@@ -47,7 +47,7 @@ public class CategoriaService {
     @Transactional
     public CategoriaDto atualizar(Integer id, CategoriaDto dto) {
         Categoria entidade = repository.getReferenceById(id);
-        entidade.setNome(dto.getNome());
+        entidade.setNome(dto.getName());
         entidade = repository.save(entidade);
         return new CategoriaDto(entidade);
     }

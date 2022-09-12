@@ -7,11 +7,6 @@ import com.br.dh.projeto.integrador.projetoIntegrador.repository.ProdutoReposito
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-<<<<<<< HEAD
-import org.springframework.transaction.annotation.Transactional;
-=======
->>>>>>> 1a524546144e3e322110e864ec62e2e460820815
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
