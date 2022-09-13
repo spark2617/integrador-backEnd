@@ -4,6 +4,8 @@ import com.br.dh.projeto.integrador.projetoIntegrador.entities.Categoria;
 
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CategoriaDto implements Serializable {
 
@@ -13,6 +15,8 @@ public class CategoriaDto implements Serializable {
     // atributo
     private Integer id;
     private String name;
+
+    private Set<ProdutoDto> produtos = new HashSet<>();
 
 
     //construtores
@@ -28,6 +32,7 @@ public class CategoriaDto implements Serializable {
     public CategoriaDto(Categoria entities) {
         this.id=entities.getId();
         this.name=entities.getName();
+        entities.getProdutos().forEach(end -> this.produtos.add(new ProdutoDto(end)));
     }
 
 
@@ -53,4 +58,10 @@ public class CategoriaDto implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+
+    public Set<ProdutoDto> getProdutos() {
+        return produtos;
+    }
+
 }

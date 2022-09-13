@@ -48,9 +48,6 @@ public class ProdutoControllers {
     @PostMapping //endpoint: http://localhost:9000/produtos
     public ResponseEntity<ProdutoDto> inserirProduto(@RequestBody ProdutoDto dto) {
 
-
-
-
         dto = service.inserir(dto); // O dto que retornou agora tem ID
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(dto.getId()).toUri();
@@ -60,8 +57,6 @@ public class ProdutoControllers {
 
     @PutMapping(value = "/{id}") //endpoint: http://localhost:9000/produtos/{id}
     public ResponseEntity<ProdutoDto> atualizarProduto(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
-
-    
 
         dto = service.atualizar(id, dto);
         return ResponseEntity.ok().body(dto);

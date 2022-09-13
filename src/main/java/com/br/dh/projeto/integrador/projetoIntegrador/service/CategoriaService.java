@@ -19,7 +19,7 @@ public class CategoriaService {
 
 
     @Transactional(readOnly = true)
-    public List<CategoriaDto> buscarTodos() {
+    public List<CategoriaDto> buscarTodas() {
         List<Categoria> list = repository.findAll();
         return list.stream().map(x -> new CategoriaDto(x)).collect(Collectors.toList());
     }
