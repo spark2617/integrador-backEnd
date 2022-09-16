@@ -10,3 +10,5 @@ INSERT INTO categoria (name) VALUES ('Gamer');
 INSERT INTO categoria (name) VALUES ('Tipo Magalu');
 INSERT INTO categoria (name) VALUES ('De Drop');
 INSERT INTO categoria (name) VALUES ('Mercadola Web');
+
+-- Precisa criar uma terceira tabela para o @manyToMany???
