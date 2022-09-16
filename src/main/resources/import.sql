@@ -7,8 +7,16 @@ INSERT INTO produto (title, image, description, price) VALUES ('Pichau', '', 'Os
 
 INSERT INTO categoria (name) VALUES ('Loja da boa');
 INSERT INTO categoria (name) VALUES ('Gamer');
-INSERT INTO categoria (name) VALUES ('Tipo Magalu');
 INSERT INTO categoria (name) VALUES ('De Drop');
 INSERT INTO categoria (name) VALUES ('Mercadola Web');
+INSERT INTO categoria (name) VALUES ('Tipo Magalu');
+INSERT INTO categoria (name) VALUES ('Pique o Brás');
 
 -- Precisa criar uma terceira tabela para o @manyToMany???
+
+INSERT INTO produto_categoria (produto_id, categoria_id) VALUE (1, 5);
+INSERT INTO produto_categoria (produto_id, categoria_id) VALUE (2, 5);
+INSERT INTO produto_categoria (produto_id, categoria_id) VALUE (3, 6);
+INSERT INTO produto_categoria (produto_id, categoria_id) VALUE (4, 3);
+INSERT INTO produto_categoria (produto_id, categoria_id) VALUE (5, 2);
+

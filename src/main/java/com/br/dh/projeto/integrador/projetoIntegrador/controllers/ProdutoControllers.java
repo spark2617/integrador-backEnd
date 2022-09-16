@@ -19,7 +19,7 @@ public class ProdutoControllers {
     ProdutoService service;
 
     @GetMapping
-    public ResponseEntity<List<ProdutoDto>> buscarTodosOsProduto() {
+    public ResponseEntity<List<ProdutoDto>> buscarTodosOsProdutos() {
         List<ProdutoDto> list = service.buscarTodos();
         return ResponseEntity.ok().body(list);
     }
