@@ -52,7 +52,7 @@ public class CategoriaControllers {
 
 
     @PutMapping(value = "/{id}") //endpoint: http://localhost:9000/categorias/{id}
-    public ResponseEntity<CategoriaDto> atualizarProduto(@PathVariable Integer id,  @RequestBody CategoriaDto dto) {
+    public ResponseEntity<CategoriaDto> atualizarCategoria(@PathVariable Integer id,  @RequestBody CategoriaDto dto) {
         dto = service.atualizar(id, dto);
         return ResponseEntity.ok().body(dto);
     }

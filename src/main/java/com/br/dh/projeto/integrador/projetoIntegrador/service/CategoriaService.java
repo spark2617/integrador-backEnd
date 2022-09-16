@@ -52,4 +52,10 @@ public class CategoriaService {
         return new CategoriaDto(entidade);
     }
 
+
+    private void copiarDtoParaEntidade(CategoriaDto dto, Categoria entidade) {
+       entidade.setNome(dto.getName());
+    }
+
+
 }
