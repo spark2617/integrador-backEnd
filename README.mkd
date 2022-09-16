@@ -31,12 +31,38 @@ Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num di
 cd "diretorio de sua preferencia"
 git clone https://github.com/spark2617/integrador-backEnd.git
 ```
+## Construção
+Para construir o projeto com o Maven, executar os comando abaixo:
+```
+comando para o build
+```
+O comando irá baixar todas as dependências do projeto e criar um diretório target com os artefatos construídos, que incluem o arquivo jar do projeto. Além disso, serão executados os testes unitários, e se algum falhar, o Maven exibirá essa informação no console.
 
+## Deploy e Publicação
+...
+## Features
+
+O projeto pode ser usado como modelo de BackEnd para E-commerce no desenvolvimento de cadastro de produtos.
+
+
+## Configuração
+Para executar o projeto, é necessário utilizar o Eclipse, para que o mesmo identifique as dependências necessárias...
+
+
+##Testes
+Para rodar os testes, utilize o comando abaixo:
+```
+comando para testes
+```
+
+Contribuições
+Contribuições são sempre bem-vindas! Para contribuir lembre-se sempre de adicionar testes unitários para as novas classes com a devida documentação.
+
+##Links
+Se você precisar adicionar links extras relativos ao projeto em questão, esse é o tópico para isso. No nosso caso, vamos adicionar o endereço do post que deu origem ao projeto.
 
 
 ## 📌O que foi feito aqui?
-
-
 
 - A base do projeto é feita seguindo o padrão DAO para comunicação com o banco de dados.
 - O banco de dados é o h2 usado localmente.
