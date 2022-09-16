@@ -5,3 +5,8 @@ INSERT INTO produto (title, image, description, price) VALUES ('Shopee', '', 'De
 INSERT INTO produto (title, image, description, price) VALUES ('KaBum', '', 'Encontre as melhores ofertas em Tecnologia e Games aqui no KaBuM!. Confira nossa linha de Hardware, Smartphones, Computadores, Eletrônicos e mais. Acesse!', '56.77');
 INSERT INTO produto (title, image, description, price) VALUES ('Pichau', '', 'Os Melhores Preços do Brasil é na Pichau! Conheça nossa linha de Computadores Gamer, Cadeiras, Monitores, Placas de Vídeo, Processadores e Muito Mais.', '954.23');
 
+INSERT INTO categoria (name) VALUES ('Loja da boa');
+INSERT INTO categoria (name) VALUES ('Gamer');
+INSERT INTO categoria (name) VALUES ('Tipo Magalu');
+INSERT INTO categoria (name) VALUES ('De Drop');
+INSERT INTO categoria (name) VALUES ('Mercadola Web');
