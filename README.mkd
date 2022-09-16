@@ -1,9 +1,36 @@
-<h1 align="center">Projeto ecommerce back end</h1>
+<h1>Projeto E-commerce BackEnd</h1>
 
 
 Aplicação de cadastro de produtos de um ecommerce.
 
+## Softwares e linguagens usados 💾
+Para executar o projeto, será necessário instalar os seguintes programas:
 
+<table>
+  <span>
+  <tr>
+    <td align="center">
+      <a href="https://spring.io/projects/spring-boot/"><img src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" width="150px"></a>
+    </td>
+    <td align="center">
+      <a href="https://docs.oracle.com/en/java/"><img src="https://www.oracle.com/a/tech/img/java-logo-white.svg" width="150px"></a>
+    </td>
+    <td align="center">
+      <a href="https://www.jetbrains.com/pt-br/idea/"><img src="https://resources.jetbrains.com/storage/products/intellij-idea/img/meta/intellij-idea_logo_300x300.png" width="75px"> </a>
+    </td>
+  </tr>
+    </span>
+ </table>
+<span>
+</span>
+
+## Desenvolvimento
+Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
+
+```
+cd "diretorio de sua preferencia"
+git clone https://github.com/spark2617/integrador-backEnd.git
+```
 
 
 
@@ -15,11 +42,6 @@ Aplicação de cadastro de produtos de um ecommerce.
 - O banco de dados é o h2 usado localmente.
 - A comunicação com a API é feita pela arquitetura REST 
 
-
-
-## Softwares e linguagens usados 💾
-
-<span><a href="https://www.jetbrains.com/pt-br/idea/"><img src="./ImagesReadMe/inteliJ.png"></a><a href="https://spring.io/projects/spring-boot/"><img src="./ImagesReadMe/spring.png" height="75px"></a></span>
 
 ## Colaboradores ✨
 
@@ -44,10 +66,10 @@ Aplicação de cadastro de produtos de um ecommerce.
     
   </tr>
 </table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+</br>
+<p>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
 ## Agradecimentos
 
