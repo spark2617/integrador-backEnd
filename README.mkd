@@ -1,4 +1,4 @@
-<h2>Projeto ecommerce back end</h2>
+<h1 align="center">Projeto ecommerce back end</h1>
 
 
 Aplicação de cadastro de produtos de um ecommerce.
