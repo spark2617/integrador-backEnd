@@ -23,9 +23,6 @@ public class CategoriaService {
     @Autowired
     private ProdutoRepository produtoRepository;
 
-
-
-
     @Transactional(readOnly = true)
     public List<CategoriaDto> buscarTodas() {
         List<Categoria> list = repository.findAll();
