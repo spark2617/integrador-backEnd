@@ -61,4 +61,11 @@ public class ProdutoService {
         return new ProdutoDto(entidade);
     }
 
+    private void copiarDtoParaEntidade(ProdutoDto dto, Produto entidade) {
+        entidade.setTitle(dto.getTitle());
+        entidade.setDescription(dto.getDescription());
+        entidade.setImage(dto.getImage());
+        entidade.setPrice(dto.getPrice());
+    }
+
 }

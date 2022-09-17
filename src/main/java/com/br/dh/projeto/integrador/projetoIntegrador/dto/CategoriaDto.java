@@ -38,7 +38,6 @@ public class CategoriaDto implements Serializable {
 
     //get e set
 
-
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }

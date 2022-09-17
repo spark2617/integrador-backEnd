@@ -1,8 +1,11 @@
 package com.br.dh.projeto.integrador.projetoIntegrador.service;
 
 import com.br.dh.projeto.integrador.projetoIntegrador.dto.CategoriaDto;
+import com.br.dh.projeto.integrador.projetoIntegrador.dto.ProdutoDto;
 import com.br.dh.projeto.integrador.projetoIntegrador.entities.Categoria;
+import com.br.dh.projeto.integrador.projetoIntegrador.entities.Produto;
 import com.br.dh.projeto.integrador.projetoIntegrador.repository.CategoriaRepository;
+import com.br.dh.projeto.integrador.projetoIntegrador.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,6 +20,8 @@ public class CategoriaService {
     @Autowired
     private CategoriaRepository repository;
 
+    @Autowired
+    private ProdutoRepository produtoRepository;
 
     @Transactional(readOnly = true)
     public List<CategoriaDto> buscarTodas() {
@@ -51,5 +56,17 @@ public class CategoriaService {
         entidade = repository.save(entidade);
         return new CategoriaDto(entidade);
     }
+
+
+    private void copiarDtoParaEntidade(CategoriaDto dto, Categoria entidade) {
+       entidade.setNome(dto.getName());
+
+        entidade.getProdutos().clear();
+        for (ProdutoDto endDto : dto.getProdutos()) {
+            Produto produto = produtoRepository.getReferenceById(endDto.getId());
+            entidade.getProdutos().add(produto);
+        }
+    }
+
 
 }
