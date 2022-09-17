@@ -21,8 +21,7 @@ public class Produto implements Serializable {
     //construtores
 
 
-    public Produto() {
-    }
+    public Produto() {}
 
     public Produto(Integer id, String title, String image,String description,double price) {
         this.id = id;

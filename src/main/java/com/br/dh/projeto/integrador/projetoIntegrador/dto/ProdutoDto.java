@@ -31,20 +31,14 @@ public class ProdutoDto implements Serializable {
 
     //construtor que recebe objeto, e o controi no D T O
     public ProdutoDto(Produto produto){
-        this.id=produto.getId();
-        this.title=produto.getTitle();
-        this.image=produto.getImage();
-        this.description=produto.getDescription();
-        this.price=produto.getPrice();
+        id=produto.getId();
+        title=produto.getTitle();
+        image=produto.getImage();
+        description=produto.getDescription();
+        price=produto.getPrice();
     }
 
     //get e set
-
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
     public Integer getId() {
         return id;
     }

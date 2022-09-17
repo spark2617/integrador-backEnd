@@ -2,7 +2,6 @@ package com.br.dh.projeto.integrador.projetoIntegrador.dto;
 
 import com.br.dh.projeto.integrador.projetoIntegrador.entities.Categoria;
 
-
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -17,7 +16,6 @@ public class CategoriaDto implements Serializable {
     private String name;
 
     private Set<ProdutoDto> produtos = new HashSet<>();
-
 
     //construtores
 
@@ -35,13 +33,7 @@ public class CategoriaDto implements Serializable {
         entities.getProdutos().forEach(end -> this.produtos.add(new ProdutoDto(end)));
     }
 
-
     //get e set
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
     public Integer getId() {
         return id;
     }
@@ -57,7 +49,6 @@ public class CategoriaDto implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
 
     public Set<ProdutoDto> getProdutos() {
         return produtos;

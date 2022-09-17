@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/categorias")  //endpoint: http://localhost:9000/categorias
-public class CategoriaControllers {
+public class CategoriaController{
 
     @Autowired
     CategoriaService service;
@@ -59,7 +59,8 @@ public class CategoriaControllers {
 
     /* Exemplo de body
      {
-      "name": "nomaDaCategoria"
+      "name": "nomaDaCategoria",
+      "produtos":[{"id":1},{"id":2}]
      }
       */
 
