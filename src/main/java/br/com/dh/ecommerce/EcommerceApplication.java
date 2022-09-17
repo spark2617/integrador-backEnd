@@ -1,13 +1,13 @@
-package br.com.dh.clinica;
+package br.com.dh.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClinicaApplication {
+public class EcommerceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClinicaApplication.class, args);
+		SpringApplication.run(EcommerceApplication.class, args);
 	}
 
 }

@@ -1,25 +1,20 @@
-package com.br.dh.projeto.integrador.projetoIntegrador.dto;
+package br.com.dh.ecommerce.dtos;
 
-import com.br.dh.projeto.integrador.projetoIntegrador.entities.Produto;
+import br.com.dh.ecommerce.entities.Produto;
 
 import java.io.Serializable;
 
 public class ProdutoDto implements Serializable {
-
-    //variavel do Serializable
     private static final long serialVersionUID = 1L;
 
-    // atributo
     private Integer id;
     private String title;
     private String image;
     private String description;
     private double price;
 
-
-    //construtores
-
-    public ProdutoDto(){}
+    public ProdutoDto() {
+    }
 
     public ProdutoDto(Integer id, String title, String image, String description, double price) {
         this.id = id;
@@ -29,16 +24,14 @@ public class ProdutoDto implements Serializable {
         this.price = price;
     }
 
-    //construtor que recebe objeto, e o controi no D T O
-    public ProdutoDto(Produto produto){
-        id=produto.getId();
-        title=produto.getTitle();
-        image=produto.getImage();
-        description=produto.getDescription();
-        price=produto.getPrice();
+    public ProdutoDto(Produto entidade) {
+        id = entidade.getId();
+        title = entidade.getTitle();
+        description = entidade.getDescription();
+        image = entidade.getImage();
+
     }
 
-    //get e set
     public Integer getId() {
         return id;
     }

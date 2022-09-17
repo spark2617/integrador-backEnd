@@ -1,63 +1,41 @@
-<<<<<<< HEAD
--- AQUI TEMOS O SEEDING DE DADOS
 
-INSERT INTO categoria (nome, email, cpf, datacadastro) VALUES ('java', 'sugando meu sabado', 'cansei', 'quero viver');
+-- SUGESTÃO DE COMO PODEMOS FAZER AS CATEGORIAS E PRODUTOS :)
 
-INSERT INTO produto (rua, numero, bairro, cidade, cep, estado) VALUES ('agora', 'foi', 'preciso', 'ser', 'felix', 'bye');
+-- Ecommerces da empresa B2W
+INSERT INTO produto (title, image, description, price) VALUES ('Americanas','https://terracoshopping.com.br/wp-content/uploads/2016/08/americanas.png', 'A empresa foi fundada em 1929, pelos americanos John Lee, Glen Matson, James Marshall e Batson Borger que partiram dos Estados Unidos em direção a Buenos Aires com o objetivo de abrir uma loja no estilo Five and Ten Cents (lojas que vendiam mercadorias a 5 e 10 centavos, na moeda americana). A ideia era lançar uma loja com preços baixos, no modelo que já fazia sucesso nos Estados Unidos e na Europa no início do século. No navio em que viajavam, conheceram os brasileiros Aquino Sales e Max Landesman que os convidaram para conhecer o Rio de Janeiro.',10.2);
 
-INSERT INTO paciente_endereco (paciente_id, endereco_id) VALUES (1, 1);
-=======
--- PI DE BACKEND
-INSERT INTO produtos (title, image, description, price) VALUES ('SmarTv Samsung 50', '', 'Tv smart de 50 polegadas, 4K', 2399.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('SmarTv LG 55', '', 'Tv smart de 55 polegadas, 4K', 2878.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('SmarTv Samsung 55', '', 'Tv smart de 55 polegadas, 4K', 2999.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('SmarTv LG 50', '', 'Tv smart de 50 polegadas, 4K', 2199.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('SmarTv TCL 50', '', 'Tv smart de 50 polegadas, 4K', 1999.99);
+INSERT INTO produto (title, image, description, price) VALUES ('Submarino', 'https://i.pinimg.com/originals/e8/8a/8b/e88a8b93000440b2e52c1e34d212877e.png', 'Sua história começou quando Antônio Bonchristiano (presidente), Marcelo Ballona (vice-presidente de marketing) e Flávio Jansen (diretor de tecnologia) a idealizaram criando a empresa TBL S.A. Em vez de começar do zero, e como parte do investimento inicial, compraram uma das primeiras e maiores livrarias virtuais da época, a Booknet. Adquiriam, assim, os seus ativos, a marca, o site de domínio da empresa, uma carteira de 50 mil clientes cadastrados e a experiência de trabalho de mais de quatro anos no ramo.', 5);
 
-INSERT INTO produtos (title, image, description, price) VALUES ('Samsung Galaxy S22 Ultra', '', 'Android 12 MIUI 4.0, Quadcamera com 100mpx...', 7999.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('Iphone 13 Pro Max', '', 'IOS 15, touchId, Quadcamera com 100mpx...', 8999.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('Samsung Galaxy S21 Ultra', '', 'Android 12 MIUI 4.0, Quadcamera com 80mpx...', 5999.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('Iphone 13 Pro Max', '', 'IOS 15, touchId, Quadcamera com 100mpx...', 6099.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('Xiaomi 12S Ultra', '', 'Android 12 MIUI 13, camera principal de 50,7mpx...', 4999.99);
+INSERT INTO produto (title, image, description, price) VALUES ('Shoptime', 'https://3.bp.blogspot.com/-anFbygK0In4/XYfWtSM1YaI/AAAAAAAACAI/XEXJrCYq-QcthzCwbd8Q2zVy7pApbjxhACLcBGAsYHQ/w1200-h630-p-k-no-nu/Screenshot_2019-09-22-16-54-42.png', 'O Shoptime, que está há 26 anos no mercado, é uma empresa brasileira de varejo, a marca mais multicanal do varejo, tendo como plataformas de venda um site, app, TV e catálogo online. É uma empresa brasileira, criada em 1995, como o primeiro canal de home shopping da América Latina, isto é, com foco na venda de produtos para a casa através de um canal de TV.', 5.2);
 
-INSERT INTO produtos (title, image, description, price) VALUES ('O homem mais rico da Babilônia ', '', 'O livro é baseado nas antigas práticas de sucesso dos babilônicos…', 16.89);
-INSERT INTO produtos (title, image, description, price) VALUES ('Watchmen – Edição Definitiva', '', 'Uma edição primorosa que não pode faltar na estante de nenhum…', 99.90);
-INSERT INTO produtos (title, image, description, price) VALUES ('É Assim que Acaba', '', 'O romance mais pessoal da carreira de Colleen Hoover, É assim que…', 31.90);
-INSERT INTO produtos (title, image, description, price) VALUES ('Mulheres que correm com os lobos', '', 'A analista junguiana Clarissa Pinkola Estés acredita que na nossa…', 39.90);
-INSERT INTO produtos (title, image, description, price) VALUES ('A garota do lago', '', 'Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas à beira de um longo trecho de água intocada...', 9.90);
+-- Ecommerces da empresa CNOVA.COM
+INSERT INTO produto (title, image, description, price) VALUES ('Extra', 'http://publicoa.com.br/wp-content/uploads/2020/10/Capa-Extra.png', 'descrição...', 3.2);
 
-INSERT INTO produtos (title, image, description, price) VALUES ('Elden Ring – Bandai Namco', '', ' Em Elden Ring, o jogador incorpora um Maculado, guerreiro guiado pela força da Graça para portar o poder do Anel Prístino e torna-se um Lorde ...', 249.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('Pokémon Legends: Arceus – Nintendo', '', 'Faz parte da oitava geração da série de jogos eletrônicos Pokémon e serve como uma prequela para os jogos eletrônicos de RPG do Nintendo DS, Pokémon Diamond e Pearl, de 2006. ', 399.90);
-INSERT INTO produtos (title, image, description, price) VALUES ('Horizon II: Forbidden West – Sony (Corp);', '', 'Horizon Forbidden West é um jogo eletrônico de RPG de ação com uma perspectiva em terceira pessoa. Os jogadores controlam Aloy, uma caçadora em um mundo governado por máquinas. O jogo apresenta um mundo aberto ambientado numa Califórnia pós-apocalíptica.', 240.99);
-INSERT INTO produtos (title, image, description, price) VALUES ('Gran Turismo 7 – Sony (Corp);', '', 'Gran Turismo 7 é um jogo eletrônico de corrida desenvolvido pela Polyphony Digital e publicado pela Sony Interactive Entertainment. É o oitavo título da linha principal da série Gran Turismo. ', 193.50);
-INSERT INTO produtos (title, image, description, price) VALUES ('Call of Duty: Vanguard – Activision Blizzard ( Corp);', '', 'A história de Call of Duty: Vanguard acompanha as operações de um grupo especializado chamado Força-Tarefa Um, ou Vanguard, em uma missão secreta para impedir um plano dos nazistas que poderia levá-los à vitória.', 374.89);
+INSERT INTO produto (title, image, description, price) VALUES ('Casas Bahia', 'https://www.ofertas24horas.com.br/wp-content/uploads/2016/03/Casas-Bahia.jpg', 'Descrição...', 9.2);
 
-INSERT INTO categoria (name) VALUES ('SmarTv');
-INSERT INTO categoria (name) VALUES ('SmartPhone');
-INSERT INTO categoria (name) VALUES ('Livros');
-INSERT INTO categoria (name) VALUES ('Games');
+INSERT INTO produto (title, image, description, price) VALUES ('Ponto Frio', 'https://logodownload.org/wp-content/uploads/2014/07/pontofrio-logo-0.png', 'Descrição...', 6.4);
 
-INSERT INTO category_products (category_id, products_id) VALUES (1, 1);
-INSERT INTO category_products (category_id, products_id) VALUES (1, 2);
-INSERT INTO category_products (category_id, products_id) VALUES (1, 3);
-INSERT INTO category_products (category_id, products_id) VALUES (1, 4);
-INSERT INTO category_products (category_id, products_id) VALUES (1, 5);
+-- Ecomerces da empresa Magazine Luiza
+INSERT INTO produto (title, image, description, price) VALUES ('Kabum', 'https://mmorpgbr.com.br/wp-content/uploads/2020/10/Kabum.jpg?x10726', 'descrição...', 4);
 
-INSERT INTO category_products (category_id, products_id) VALUES (2, 6);
-INSERT INTO category_products (category_id, products_id) VALUES (2, 7);
-INSERT INTO category_products (category_id, products_id) VALUES (2, 8);
-INSERT INTO category_products (category_id, products_id) VALUES (2, 9);
-INSERT INTO category_products (category_id, products_id) VALUES (2, 10);
+INSERT INTO produto (title, image, description, price) VALUES ('Magazine Luiza', 'https://fdr.com.br/wp-content/uploads/2020/07/magazine-luiza-2-970x544.jpg', 'descrição', 12);
 
-INSERT INTO category_products (category_id, products_id) VALUES (3, 11);
-INSERT INTO category_products (category_id, products_id) VALUES (3, 12);
-INSERT INTO category_products (category_id, products_id) VALUES (3, 13);
-INSERT INTO category_products (category_id, products_id) VALUES (3, 14);
-INSERT INTO category_products (category_id, products_id) VALUES (3, 15);
+-- Ecommerces da Empresa Amazon
+INSERT INTO produto (title, image, description, price) VALUES ('Amazon', 'https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2019/04/05/Pictures/books-photo-retail-store-seen-amazon-amazon_16cf7722-578e-11e9-8bc0-bee180be535f.jpg', 'Amazon.com, Inc. é uma empresa multinacional de tecnologia norte-americana com sede em Seattle, Washington. A companhia se concentra no e-commerce, computação em nuvem, streaming e inteligência artificial. É considerada uma das cinco grandes empresas de tecnologia, juntamente com Google, Apple, Microsoft e Facebook.[4] Foi referida como "uma das forças econômicas e culturais mais influentes do mundo".', 20);
 
-INSERT INTO category_products (category_id, products_id) VALUES (4, 16);
-INSERT INTO category_products (category_id, products_id) VALUES (4, 17);
-INSERT INTO category_products (category_id, products_id) VALUES (4, 18);
-INSERT INTO category_products (category_id, products_id) VALUES (4, 19);
-INSERT INTO category_products (category_id, products_id) VALUES (4, 20);
->>>>>>> b0242ab37230f273e8ef81e70e039736d29b094f
+-- Ecommerces da Empresa Mercado Livre
+INSERT INTO produto (title, image, description, price) VALUES ('Mercado Livre', 'https://finanzero.com.br/images/uploads/2020/11/como-vender-no-mercado-livre-passo-a-passo.jpg', 'O mercado livre é uma empresa argentina de tecnologia que oferece soluções de comércio eletrônico para que pessoas e empresas possam comprar, vender, pagar, anunciar e enviar produtos por meio da internet. Opera em 18 países, tem cerca de 30 mil funcionários e é o site de e-commerce mais popular da América Latina em número de visitantes.[4] A empresa mantém operações na Argentina, Bolívia, Brasil, Chile, Colômbia, Costa Rica, Equador, El Salvador, Guatemala, Honduras, México, Nicarágua, Panamá, Paraguai, Peru, República Dominicana, Uruguai e Venezuela.[5] Até 2016, o MercadoLivre contava com 174,2 milhões de usuários na América Latina.[6]', 9.2);
+
+
+
+INSERT INTO categoria (name) VALUES ('B2W');
+INSERT INTO categoria (name) VALUES ('Mercado Livre');
+INSERT INTO categoria (name) VALUES ('Amazon');
+INSERT INTO categoria (name) VALUES ('CNOVA.COM');
+INSERT INTO categoria (name) VALUES ('Magazine Luiza');
+
+-- Os valores das empresas são em bilhões de reais
+
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (1, 1);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (2, 3);
+-- Não inseri todos so produtos nas categorias ...

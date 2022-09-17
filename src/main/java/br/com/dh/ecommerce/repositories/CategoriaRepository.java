@@ -1,12 +1,9 @@
-package com.br.dh.projeto.integrador.projetoIntegrador.repository;
+package br.com.dh.ecommerce.repositories;
 
-import com.br.dh.projeto.integrador.projetoIntegrador.entities.Categoria;
+import br.com.dh.ecommerce.entities.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Integer> {
-
-
-
 }

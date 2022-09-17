@@ -1,39 +1,35 @@
-package com.br.dh.projeto.integrador.projetoIntegrador.dto;
+package br.com.dh.ecommerce.dtos;
 
-import com.br.dh.projeto.integrador.projetoIntegrador.entities.Categoria;
+import br.com.dh.ecommerce.entities.Categoria;
 
 import java.io.Serializable;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class CategoriaDto implements Serializable {
-
-    //variavel do Serializable
     private static final long serialVersionUID = 1L;
 
-    // atributo
     private Integer id;
     private String name;
 
     private Set<ProdutoDto> produtos = new HashSet<>();
 
-    //construtores
-
-    public CategoriaDto(){}
+    public CategoriaDto() {
+    }
 
     public CategoriaDto(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    //construtor que recebe objeto, e o controi no D T O
-    public CategoriaDto(Categoria entities) {
-        this.id=entities.getId();
-        this.name=entities.getName();
-        entities.getProdutos().forEach(end -> this.produtos.add(new ProdutoDto(end)));
+    public CategoriaDto(Categoria entidade) {
+        id = entidade.getId();
+        name = entidade.getName();
+
+        entidade.getProdutos().forEach(end -> this.produtos.add(new ProdutoDto(end)));
     }
 
-    //get e set
     public Integer getId() {
         return id;
     }
@@ -53,5 +49,4 @@ public class CategoriaDto implements Serializable {
     public Set<ProdutoDto> getProdutos() {
         return produtos;
     }
-
 }

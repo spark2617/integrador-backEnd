@@ -1,6 +1,6 @@
-package br.com.dh.clinica.repositories;
+package br.com.dh.ecommerce.repositories;
 
-import br.com.dh.clinica.entities.Produto;
+import br.com.dh.ecommerce.entities.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

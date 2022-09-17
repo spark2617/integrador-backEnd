@@ -1,8 +1,8 @@
-package br.com.dh.clinica.services;
+package br.com.dh.ecommerce.services;
 
-import br.com.dh.clinica.dtos.ProdutoDto;
-import br.com.dh.clinica.entities.Produto;
-import br.com.dh.clinica.repositories.ProdutoRepository;
+import br.com.dh.ecommerce.dtos.ProdutoDto;
+import br.com.dh.ecommerce.entities.Produto;
+import br.com.dh.ecommerce.repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -56,11 +56,9 @@ public class ProdutoService {
     }
 
     private void copiarDtoParaEntidade(ProdutoDto dto, Produto entidade) {
-        entidade.setRua(dto.getRua());
-        entidade.setNumero(dto.getNumero());
-        entidade.setBairro(dto.getBairro());
-        entidade.setCidade(dto.getCidade());
-        entidade.setCep(dto.getCep());
-        entidade.setEstado(dto.getEstado());
+        entidade.setTitle(dto.getTitle());
+        entidade.setImage(dto.getImage());
+        entidade.setDescription(dto.getDescription());
+        entidade.setPrice(dto.getPrice());
     }
 }
