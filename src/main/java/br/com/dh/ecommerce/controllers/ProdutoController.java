@@ -18,13 +18,13 @@ public class ProdutoController {
     ProdutoService service;
 
     @GetMapping
-    public ResponseEntity<List<ProdutoDto>> buscarTodosOsEnderecos() {
+    public ResponseEntity<List<ProdutoDto>> buscarTodos() {
         List<ProdutoDto> list = service.buscarTodos();
         return ResponseEntity.ok().body(list);
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<ProdutoDto> buscarEnderecoPorId(@PathVariable Integer id) {
+    public ResponseEntity<ProdutoDto> buscarPorId(@PathVariable Integer id) {
         ProdutoDto dto = service.buscarPorId(id);
         return ResponseEntity.ok().body(dto);
     }
@@ -36,7 +36,7 @@ public class ProdutoController {
     }
 
     @PostMapping
-    public ResponseEntity<ProdutoDto> inserirEndereco(@RequestBody ProdutoDto dto) {
+    public ResponseEntity<ProdutoDto> inserir(@RequestBody ProdutoDto dto) {
         dto = service.inserir(dto); // O dto que retornou agora tem ID
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(dto.getId()).toUri();
@@ -44,7 +44,7 @@ public class ProdutoController {
     }
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity<ProdutoDto> atualizarEndereco(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
+    public ResponseEntity<ProdutoDto> atualizar(@PathVariable Integer id,  @RequestBody ProdutoDto dto) {
         dto = service.atualizar(id, dto);
         return ResponseEntity.ok().body(dto);
     }
