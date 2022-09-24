@@ -37,15 +37,15 @@ INSERT INTO categoria (name) VALUES ('Amazon');
 INSERT INTO categoria (name) VALUES ('Mercado Livre');
 
 
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (1, 1);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (1, 2);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (1, 3);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (2, 4);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (2, 5);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (2, 6);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (3, 7);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (3, 8);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (3, 9);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (4, 10);
-INSERT INTO categoria_produto (categoria_id,produto_id) VALUE (5, 11);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (1, 1);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (1, 2);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (1, 3);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (2, 4);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (2, 5);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (2, 6);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (3, 7);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (3, 8);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (3, 9);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (4, 10);
+INSERT INTO categoria_produto (categoria_id,produto_id) VALUES (5, 11);
 

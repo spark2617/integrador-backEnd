@@ -29,6 +29,7 @@ public class ProdutoDto implements Serializable {
         title = entidade.getTitle();
         description = entidade.getDescription();
         image = entidade.getImage();
+        price = entidade.getPrice();
 
     }
 

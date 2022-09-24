@@ -13,9 +13,9 @@ public class Produto implements Serializable {
     private Integer id;
     private String title;
     private String image;
-    //@Column(columnDefinition = "TEXT")
-    private String description;
     private double price;
+    @Column(columnDefinition = "TEXT")
+    private String description;
 
     public Produto() {
     }
