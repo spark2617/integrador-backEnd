@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.dh</groupId>
 	<artifactId>ecommerce</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-ECOMMERCE</version>
 	<name>ecommerce</name>
 	<description>Projeto guiado da disciplina de backend</description>
 	<properties>
@@ -39,6 +39,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 

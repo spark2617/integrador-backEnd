@@ -14,6 +14,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -69,7 +70,7 @@ public class CategoriaService {
         entidade = repository.save(entidade);
         return new CategoriaDto(entidade);
         }
-        catch(EntityNotFoundException e){
+        catch(javax.persistence.EntityNotFoundException e){
             throw new EntityNotFoundException("Registro "+id+" Não encontrado!");
         }
 

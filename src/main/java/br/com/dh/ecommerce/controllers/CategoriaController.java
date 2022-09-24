@@ -32,12 +32,12 @@ public class CategoriaController {
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> excluirCategoria(@PathVariable Integer id) {
         service.excluir(id);
-        return ResponseEntity.noContent().build(); // Retorna 204
+        return ResponseEntity.noContent().build();
     }
 
     @PostMapping
     public ResponseEntity<CategoriaDto> inserirCategoria(@RequestBody CategoriaDto dto) {
-        dto = service.inserir(dto); // O dto que retornou agora tem ID
+        dto = service.inserir(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(dto);

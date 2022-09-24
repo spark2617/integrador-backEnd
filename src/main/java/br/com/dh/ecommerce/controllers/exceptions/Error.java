@@ -10,11 +10,10 @@ public class Error implements Serializable {
     private Integer Status;
     private String error;
     private String msg;
-    //caminho
+
     private String link;
 
-    public Error() {
-    }
+    public Error() {}
 
     public Instant getTimestamp() {
         return timestamp;

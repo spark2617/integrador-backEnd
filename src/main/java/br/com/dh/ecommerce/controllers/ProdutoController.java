@@ -32,7 +32,7 @@ public class ProdutoController {
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> excluirProduto(@PathVariable Integer id) {
         service.excluir(id);
-        return ResponseEntity.noContent().build(); // Retorna 204
+        return ResponseEntity.noContent().build();
     }
 
     @PostMapping

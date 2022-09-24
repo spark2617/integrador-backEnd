@@ -56,7 +56,7 @@ public class ProdutoService {
         copiarDtoParaEntidade(dto, entidade);
             entidade = repository.save(entidade);
         return new ProdutoDto(entidade);}
-        catch(EntityNotFoundException e){
+        catch(javax.persistence.EntityNotFoundException e){
             throw new EntityNotFoundException("Registro "+id+" Não encontrado!");
         }
     }
