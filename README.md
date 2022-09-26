@@ -78,7 +78,7 @@ Se você precisar adicionar links extras relativos ao projeto em questão, esse 
   <tr>
     <td align="center"><a href="https://github.com/marqvin"><img src="https://avatars.githubusercontent.com/u/58312849?s=400&u=a2e483841e34a267f6dd2f25ab3e6b9b019b368e&v=4" width="100px;" alt="Vinícius Marques"/><br /><sub><b>Vinícius Marques</b></sub></a><br />
     </td>
-    <td align="center"><a href=""><img src="" width="100px;" alt="Jade"/><br /><sub><b>Jade</b></sub></a><br />
+    <td align="center"><a href="https://github.com/jbsoares"><img src="https://avatars.githubusercontent.com/u/44385434?v=4" width="100px;" alt="Jade"/><br /><sub><b>Jade</b></sub></a><br />
     </td>
     <td align="center"><a href="https://github.com/JeffersonMendes32"><img src="https://avatars.githubusercontent.com/u/99696674?v=4" width="100px;" alt="Jefferson Mendes"/><br /><sub><b>Jefferson Mendes</b></sub></a><br />
     </td>
