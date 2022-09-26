@@ -1,7 +1,7 @@
 <h1>Projeto E-commerce BackEnd</h1>
 
 
-Aplicação de cadastro de produtos de um ecommerce.
+Aplicação BackEnd de cadastro de produtos de um ecommerce.
 
 ## Softwares e linguagens usados 💾
 Para executar o projeto, será necessário instalar os seguintes programas:
@@ -21,8 +21,15 @@ Para executar o projeto, será necessário instalar os seguintes programas:
   </tr>
     </span>
  </table>
-<span>
-</span>
+
+  - JDK 17: Necessário para executar o projeto Java
+  - IntelliJ: Para desenvolvimento do projeto
+  - Apache Maven 3.8.6: Necessário para realizar o build do projeto Java
+  - Spring Boot 2.7.4: Framework utilizada para facilitar o processo na aplicação Java
+      - Spring Web: Para criação de aplicativos web, incluindo RESTful, usando Spring MVC. Usa o Apache Tomcat como o contêiner incorporado padrão.
+      - H2 Database: Para testes (recomendado) Fornece um banco de dados rápido na memória que suporta JDBC API e acesso R2DBC, com um espaço pequeno (2mb). Suporta modos incorporados e de servidor, bem como um aplicativo de console baseado em navegador.
+  
+
 
 ## Desenvolvimento
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
