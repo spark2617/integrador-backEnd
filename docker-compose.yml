@@ -2,7 +2,7 @@ version: "3.7"
 services:
   #outro container --- backend
   springweb:
-    container_name: dockerback
+    container_name: ecommercegrupo2
     build: . #preciso do Dockerfile para gerar a imagem
     ports:
       - "8081:8080"
