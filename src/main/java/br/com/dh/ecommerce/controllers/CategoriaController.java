@@ -9,9 +9,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-
-@RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
+@RestController
 @RequestMapping(value = "/categorias")
 public class CategoriaController {
 
